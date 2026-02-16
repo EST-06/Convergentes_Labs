@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Beer Adviser</string>
+    <string name="find_beer">Find Beer!</string>
+    <string name="brands">No beers selected</string>
+    <string-array name="array_values">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+
+    <string-array name="light_values">
+        <item>Club Colombia Trigo</item>
+        <item>Corona</item>
+    </string-array>
+
+    <string-array name="amber_values">
+        <item>3 Coordilleras Mulata</item>
+        <item>Club Colombia Roja</item>
+    </string-array>
+
+    <string-array name="brown_values">
+        <item>No conozco ni una</item>
+        <item>Para completar el arreglo</item>
+    </string-array>
+
+    <string-array name="dark_values">
+        <item>Club Colombia Negra</item>
+        <item>Cerveza Leona</item>
+    </string-array>
+</resources>
