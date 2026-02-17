@@ -43,4 +43,42 @@ public class BeerExpert {
         return String.join("\n", values);
 
     }
+
+    public String getStationService(String beer) {
+        ArrayList<String> values = new ArrayList<>();
+
+        switch (beer) {
+            case "Andina":
+                values.add("Terpel");
+                values.add("Primax");
+                values.add("Biomax");
+                values.add("Texaco");
+                values.add("Shell");
+                break;
+            case "Caribe":
+                values.add("Terpel");
+                values.add("Primax");
+                values.add("Biomax");
+                values.add("Texaco");
+                values.add("Shell");
+                break;
+            case "Pacifica":
+                values.add("Terpel");
+                values.add("Biomax");
+                values.add("Texaco");
+                break;
+            case "Amazonia":
+                values.add("Terpel");
+                break;
+            case "Orinoquia":
+                values.add("Terpel");
+                values.add("Primax");
+                break;
+            default:
+                values.add("No region selected");
+        }
+
+        return String.join("\n", values);
+
+    }
 }

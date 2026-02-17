@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Beer Adviser</string>
-    <string name="find_beer">Find Beer!</string>
-    <string name="brands">No beers selected</string>
+    <string name="app_name" translatable="false">Beer Adviser</string>
+    <string name="find_beer" translatable="false">Find Beer!</string>
+    <string name="brands" translatable="false">No beers selected</string>
     <string-array name="array_values">
         <item>light</item>
         <item>amber</item>
@@ -10,8 +10,11 @@
     </string-array>
 
     <string-array name="array_regions">
-        <item>Club Colombia Trigo</item>
-        <item>Corona</item>
+        <item>Andina</item>
+        <item>Caribe</item>
+        <item>Pacifica</item>
+        <item>Amazonia</item>
+        <item>Orinoquia</item>
     </string-array>
 
 </resources>

@@ -34,4 +34,13 @@ public class FindBeerActivity extends AppCompatActivity {
         brands.setText(results);
 
     }
+
+    public void onClickFindRegion(View view) {
+        TextView stations = (TextView) findViewById(R.id.avaiable_stations);
+        Spinner region = (Spinner) findViewById(R.id.region);
+        String type = String.valueOf(region.getSelectedItem());
+        String results = beerExpert.getStationService(type);
+        stations.setText(results);
+
+    }
 }
