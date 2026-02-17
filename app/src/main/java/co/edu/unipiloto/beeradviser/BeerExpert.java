@@ -11,36 +11,36 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BeerExpert {
-    
-    public void getBrands(View view) {
-        TextView brands = (TextView) findViewById(R.id.brands);
-        Spinner color = (Spinner) findViewById(R.id.color);
-        String type = String.valueOf(color.getSelectedItem());
-        String[] values;
 
-        switch (type) {
+    public String getBrands(String beer) {
+        ArrayList<String> values = new ArrayList<>();
+
+        switch (beer) {
             case "light":
-                values = getResources().getStringArray(R.array.light_values);
+                values.add("Club Colombia Trigo");
+                values.add("Corona");
                 break;
             case "amber":
-                values = getResources().getStringArray(R.array.amber_values);
+                values.add("3 Coordilleras Mulata");
+                values.add("Club Colombia Roja");
                 break;
             case "brown":
-                values = getResources().getStringArray(R.array.brown_values);
+                values.add("No conozco ni una");
+                values.add("Para completar el arreglo");
                 break;
             case "dark":
-                values = getResources().getStringArray(R.array.dark_values);
+                values.add("Club Colombia Negra");
+                values.add("Cerveza Leona");
                 break;
             default:
-                brands.setText("No color selected");
-                return;
+                values.add("No color selected");
         }
 
-        String result = String.join("\n", values);
-        brands.setText(result);
+        return String.join("\n", values);
 
     }
 }

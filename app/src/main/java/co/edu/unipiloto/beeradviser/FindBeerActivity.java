@@ -12,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class FindBeerActivity extends AppCompatActivity {
+    BeerExpert beerExpert = new BeerExpert();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,8 @@ public class FindBeerActivity extends AppCompatActivity {
         TextView brands = (TextView) findViewById(R.id.brands);
         Spinner color = (Spinner) findViewById(R.id.color);
         String type = String.valueOf(color.getSelectedItem());
-        brands.setText(type);
+        String results = beerExpert.getBrands(type);
+        brands.setText(results);
 
     }
 }

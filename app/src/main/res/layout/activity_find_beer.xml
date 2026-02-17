@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".BeerExpert">
+    tools:context=".FindBeerActivity">
 
     <Spinner
         android:id="@+id/color"
@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:layout_margin="16dp"
         android:text="@string/find_beer"
-        android:onClick="getBrands"/>
+        android:onClick="onClickFindBeer"/>
 
     <TextView
         android:id="@+id/brands"
@@ -33,7 +33,43 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="Hola"/>
+        android:text="Here the Brands"/>
+
+
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:textSize="30sp"
+        android:text="==================="/>
+
+    <Spinner
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/array_regions"/>
+
+    <Button
+        android:id="@+id/find_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/find_beer"
+        android:onClick="onClickFindBeer"/>
+
+    <TextView
+        android:id="@+id/avaiable_stations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="Here the Stations"/>
 
 
 </LinearLayout>
